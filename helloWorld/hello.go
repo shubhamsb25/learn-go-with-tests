@@ -11,6 +11,7 @@ const (
 	frenchHelloPrefix  = "Bonjour, "
 )
 
+// Prints hello based on provided name and language
 func Hello(name string, lang string) string {
 	if name == "" {
 		name = "World"
