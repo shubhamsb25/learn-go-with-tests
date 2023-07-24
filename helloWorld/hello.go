@@ -2,15 +2,14 @@ package main
 
 import "fmt"
 
-const(
-	hindi = "Hindi"
+const (
+	hindi  = "Hindi"
 	french = "French"
-	
-	englishHelloPrefix = "Hello, "
-	hindiHelloPrefix = "Namaste, "
-	frenchHelloPrefix = "Bonjour, "
-)
 
+	englishHelloPrefix = "Hello, "
+	hindiHelloPrefix   = "Namaste, "
+	frenchHelloPrefix  = "Bonjour, "
+)
 
 func Hello(name string, lang string) string {
 	if name == "" {
