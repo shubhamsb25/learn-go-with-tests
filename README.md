@@ -20,3 +20,8 @@ go test ./...
 go test ./... -v
 ```
 
+### Run benchmark test
+```
+go test --bench=.
+```
+
