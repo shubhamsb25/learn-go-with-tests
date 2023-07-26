@@ -25,3 +25,8 @@ go test ./... -v
 go test --bench=.
 ```
 
+### Run test with coverage
+```
+go test --cover ./...
+```
+
