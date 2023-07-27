@@ -29,3 +29,26 @@ func TestSum(t *testing.T) {
 		}
 	})
 }
+
+func TestSumAllTails(t *testing.T) {
+	checkSum := func(t *testing.T, got []int, want []int) {
+		t.Helper()
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %d want %d", got, want)
+		}
+	}
+
+	t.Run("sum all tail elements", func(t *testing.T) {
+		got := SumAllTails([]int{1, 2, 3}, []int{3, 4, 5})
+		want := []int{5, 9}
+
+		checkSum(t, got, want)
+	})
+
+	t.Run("safely sum for empty arrays", func(t *testing.T) {
+		got := SumAllTails([]int{}, []int{3, 4, 5})
+		want := []int{0, 9}
+
+		checkSum(t, got, want)
+	})
+}
