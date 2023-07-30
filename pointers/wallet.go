@@ -20,3 +20,7 @@ func (w *Wallet) Balance() Bitcoin {
 	// return (*w).balance: this is also valid, golang automatically dereferences
 	return w.balance
 }
+
+func (w *Wallet) Withdraw(amount Bitcoin) {
+	w.balance -= amount
+}
